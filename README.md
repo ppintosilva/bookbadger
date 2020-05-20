@@ -3,6 +3,8 @@
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/bookbadger)](https://CRAN.R-project.org/package=bookbadger)
+[![R build status](https://github.com/ppintosilva/bookbadger/workflows/R-CMD-check/badge.svg)](https://github.com/ppintosilva/bookbadger/actions)
+[![Codecov test coverage](https://codecov.io/gh/ppintosilva/bookbadger/branch/master/graph/badge.svg)](https://codecov.io/gh/ppintosilva/bookbadger?branch=master)
 <!-- badges: end -->
 
 The goal of bookbadger is to ...
