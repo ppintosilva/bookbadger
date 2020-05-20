@@ -2,6 +2,7 @@
 # bookbadger
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/bookbadger)](https://CRAN.R-project.org/package=bookbadger)
 <!-- badges: end -->
 
 The goal of bookbadger is to ...
