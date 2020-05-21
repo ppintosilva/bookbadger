@@ -1,0 +1,31 @@
+digraph writing_cycle {
+  splines=true
+
+  # a 'graph' statement
+  graph [layout = dot, overlap = true]
+
+  # several 'node' statements
+  node [shape = box,
+        fixedsize = true,
+        width = 2,
+        fontname = Helvetica,
+        penwidth = 3,
+        fontsize = 14]
+
+  0 [style = invis]
+  1 [label = 'structuring', color = DeepSkyBlue]
+  2 [label = 'writing', color = SteelBlue]
+  3 [label = 'ready to review', color = Orchid]
+  4 [label = 'reviewing(self/peer)', color = Firebrick]
+  5 [label = 'stable', color = MediumSeaGreen]
+
+  # several 'edge' statements
+  edge [fontname = 'helvetica', fontsize = 12, color = Gray10];
+
+  0 -> 1 [label = 'dev']
+  1 -> 2
+  2 -> 3 -> 4
+  4 -> 5 [label = 'minor/major']
+  4 -> 2 [label = '+1 iteration']
+  5 -> 1 [label = 'dev']
+}
